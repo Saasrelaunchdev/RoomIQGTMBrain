@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "roomiq-gtm-brain": {
+      "command": "python3",
+      "args": [
+        "gtm-brain/tools/mcp_server.py"
+      ]
+    }
+  }
+}

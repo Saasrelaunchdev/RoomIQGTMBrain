@@ -1,0 +1,89 @@
+# RoomIQ GTM Brain
+
+> The governed go-to-market context repository for RoomIQ, room-level market intelligence and underwriting for US rent-by-the-room investors. Built from 15 product screenshots (2026-11-10) and a competitive desk scan (2026-11-13). This file indexes the repository for AI agents: read the routers, then the control layer, then only the task files you need. Never retrieve the control layer by search; load it whole.
+
+## Routers (always loaded)
+- [CLAUDE.md](CLAUDE.md): router for Claude Code and Claude apps; wins if routers disagree.
+- [AGENTS.md](AGENTS.md): router for Codex, Cursor, Zed, Jules, opencode, Warp, and other AGENTS.md readers.
+- [GEMINI.md](GEMINI.md): pointer for Gemini CLI.
+- [README.md](README.md): human orientation, architecture, use cases, diagrams.
+
+## Source of truth
+- [Master GTM context](context/RoomIQ_GTM_Master_Context.md): the whole go-to-market in one read; Section 0 is written to the agent.
+
+## Control layer (read before writing anything customer-facing)
+- [Writing rules](rules/writing-rules.md): mechanics, banned words, tone, channel discipline, signature lines.
+- [Do not say](rules/do-not-say.md): forbidden claims with safe replacements, fair housing, demo rules, scoped superlatives.
+- [Feature status](rules/feature-status.md): SHIPPED, PARTIAL, UNVERIFIED, IN BUILD, ROADMAP for C01 to C32 and R01 to R03; known defects.
+- [Glossary](rules/glossary.md): canonical product, metric, and category vocabulary.
+- [QA checklist](ops/QA-checklist.md): the pre-ship gate.
+
+## Reference (load on demand)
+- [Product surface](reference/product-surface.md): RoomIQ as built, IA, workflow, entities, reconciling numbers.
+- [Feature matrix](reference/feature-matrix.md): which capability leads, hooks, is table stakes, or is held.
+- [ICP and personas](reference/icp-personas.md): acquiring investors, operating hosts, buying committee, design partners.
+- [Positioning](reference/positioning.md): category, statement, reframes, one-liners.
+- [Value proposition, investors](reference/value-proposition-investors.md): Audience A pillars and reasons to believe.
+- [Value proposition, operators](reference/value-proposition-operators.md): Audience B pillars and reasons to believe.
+- [Customer journey funnels](reference/customer-journey.md): two funnels, stage by stage, activation definition.
+- [Competitive market analysis](reference/competitive-analysis.md): market shape, vectors, wedge, dated public facts.
+- [Competitor battlecards](reference/competitor-battlecards.md): strength, gap, how RoomIQ wins, per rival.
+- [Objection handling](reference/objection-handling.md): data source, accuracy, coverage, AI images, pricing, legal.
+- [Marketing campaigns](reference/marketing-campaigns.md): five campaigns, the assumption each tests, asset backlog.
+- [Content engine](reference/content-engine.md): channel engine for education content and communities.
+- [Demo playbook](reference/demo-playbook.md): channel engine for founder-led demos, landmines, screenshot rules.
+- [Trust and risk](reference/trust-and-risk.md): data rights, AI derivatives, financial outputs, fair housing, disclosures.
+- [Pricing and packaging](reference/pricing-packaging.md): monetization signals as hypotheses; pricing is OPEN.
+- [Metrics methodology](reference/metrics-methodology.md): how each number is built, verified versus working.
+- [Innovation accounting](reference/innovation-accounting.md): baseline, tune, pivot or persevere; the snowball data flow.
+
+## Innovation accounting (state that compounds)
+- [Assumptions](innovation/assumptions.md): leap-of-faith assumptions with riskiness and status.
+- [Experiments](innovation/experiments.md): pre-registered experiments with thresholds set before results.
+- [Metrics](innovation/metrics.md): North Star, input metrics, vanity guards, learning velocity.
+
+## Operations and state
+- [Decision log](ops/decisions.md): DECIDED, WORKING, OPEN, with rationale and what each does not change.
+- [Signal log](ops/signal-log.md): raw market input, verbatim, with disposition.
+- [Activity log](ops/activity-log.md): what the team did, expected outcome written first.
+- [Copy bank](ops/copy-bank.md): checked language and the closed proof set.
+- [Asset index](ops/asset-index.md): sources, live surfaces, adapters, generated artifacts.
+- [Review cadence](ops/review-cadence.md): rituals, owners, staleness, authority.
+- [Founder gap interview](ops/founder-gap-interview.md): 21 questions with the defaults the brain runs on.
+- [Baseline snapshot](snapshots/2026-11-13-baseline.md): day-zero capture.
+
+## Templates
+- [Template library](templates/README.md): one per channel in the working mix, none for excluded channels.
+- [Landing page](templates/landing-page.md), [One-pager](templates/one-pager.md), [Demo script](templates/demo-script.md), [Education article](templates/seo-article.md), [Social post](templates/social-post.md), [Community answer](templates/community-answer.md), [Warm outreach](templates/outreach-warm.md), [Release note](templates/release-note.md), [In-app copy](templates/in-app-copy.md)
+
+## Examples (match the voice)
+- [Investor landing hero](examples/landing-hero-investors.md)
+- [Investor one-pager](examples/one-pager-investors.md)
+- [Demo talk track](examples/demo-talk-track.md)
+- [Operator community answer](examples/community-answer-operators.md)
+- [In-app copy fixes](examples/in-app-copy-fixes.md)
+- [Design-partner invitation](examples/outreach-warm-design-partner.md): the Phase 9 live test asset, with its QA record.
+
+## Prompts and finished assets
+- [Prompt library](prompts/common-tasks.md): filled prompts per recurring job; also MCP prompts and Claude Code commands.
+- [Pages](pages/README.md): shipped long-form assets; none yet.
+
+## Portability (doors for other tools)
+- [Adapters guide](adapters/README.md): every tool, how it loads, the conformance check.
+- [Portable control layer](adapters/portable-control-layer.md): dated paste-in for chat models without file access.
+- [MCP server guide](adapters/mcp/README.md): tools, resources, prompts, client configs.
+- Generated tool pointers: [Cursor rule](.cursor/rules/roomiq-gtm.mdc), [Windsurf rule](.windsurf/rules/roomiq-gtm.md), [Copilot instructions](.github/copilot-instructions.md), [Cline rule](.clinerules/roomiq-gtm.md), [Roo rule](.roo/rules/roomiq-gtm.md), [Continue rule](.continue/rules/roomiq-gtm.md), [Kiro steering](.kiro/steering/roomiq-gtm.md), [Junie guidelines](.junie/guidelines.md), [Amazon Q rule](.amazonq/rules/roomiq-gtm.md)
+- Skill pointers written by the installer: [Cursor skill rule](.cursor/rules/go-to-market-brain.mdc), [Windsurf skill rule](.windsurf/rules/go-to-market-brain.md)
+- [Consuming-repo adapters](adapters/consuming-repo/AGENTS.md): pre-rendered for a product repo with the brain at `gtm-brain/`.
+
+## Machine-readable exports (generated, do not edit)
+- [Single-file bundle](dist/roomiq-gtm-brain.bundle.md): control layer plus master context, guardrails last.
+- [Full text](dist/llms-full.txt): every brain file concatenated.
+- [Manifest](dist/brain.manifest.json): files, layers, purposes, sizes, hashes, load policy.
+- [Chunks](dist/brain.chunks.jsonl): heading-level chunks with metadata for vector stores.
+- [Ledgers](dist/ledgers.json): every ledger and log as JSON.
+
+## Tooling
+- [Tools guide](tools/README.md): CLI, MCP server, tests, contracts.
+- [Brain change PR template](.github/pull_request_template.md): the AMEND order as a checklist.
+- [Sources manifest](sources/README.md): what each source settles; why screenshots are kept out.

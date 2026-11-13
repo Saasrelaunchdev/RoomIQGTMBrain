@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Saasrelaunchdev/RoomIQGTMBrain/schemas/assumption.schema.json",
+  "title": "Assumption",
+  "description": "A leap-of-faith assumption. One row of innovation/assumptions.md.",
+  "type": "object",
+  "required": [
+    "id",
+    "assumption",
+    "type",
+    "riskiness",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[ARG]\\d+$"
+    },
+    "assumption": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "VALUE",
+        "GROWTH",
+        "RISK"
+      ]
+    },
+    "riskiness": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "UNTESTED",
+        "TESTING",
+        "VALIDATED",
+        "INVALIDATED"
+      ]
+    },
+    "evidence": {
+      "type": "string"
+    },
+    "tested_by": {
+      "type": "string"
+    }
+  }
+}

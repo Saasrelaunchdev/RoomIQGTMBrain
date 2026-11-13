@@ -1,0 +1,61 @@
+# Intake from anywhere: a CRM, a call recorder, n8n, Zapier, a form, or a script can append a
+# signal or an activity by calling the GitHub repository_dispatch API. The workflow appends the
+# entry and opens a pull request, so nothing reaches the brain without review.
+#
+#   curl -X POST https://api.github.com/repos/Saasrelaunchdev/RoomIQGTMBrain/dispatches \
+#     -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
+#     -d '{"event_type":"brain-signal","client_payload":{"type":"OBJECTION","source":"demo call",
+#          "verbatim":"Where does your data come from?","context":"Investor, Dallas, stage 4"}}'
+#
+# Payload fields follow schemas/signal.schema.json or schemas/activity.schema.json.
+name: brain-intake
+
+on:
+  repository_dispatch:
+    types: [brain-signal, brain-activity]
+  workflow_dispatch:
+    inputs:
+      event:
+        description: "brain-signal or brain-activity"
+        required: true
+        default: brain-signal
+      payload:
+        description: "JSON payload matching the schema"
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  intake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Append the entry
+        env:
+          EVENT: ${{ github.event.action || inputs.event }}
+          PAYLOAD: ${{ github.event.client_payload && toJSON(github.event.client_payload) || inputs.payload }}
+        run: |
+          python3 tools/brain.py ingest --event "$EVENT" --payload-env PAYLOAD
+          python3 tools/brain.py build
+      - name: Open a pull request for review
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EVENT: ${{ github.event.action || inputs.event }}
+          BASE: ${{ github.event.repository.default_branch }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          branch="intake/${EVENT}-${RUN_ID}"
+          git config user.name "brain-intake[bot]"
+          git config user.email "brain-intake@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add ops/ dist/
+          git commit -m "Intake: ${EVENT} (run ${RUN_ID})"
+          git push origin "$branch"
+          gh pr create --base "$BASE" --head "$branch" \
+            --title "Intake: ${EVENT} (run ${RUN_ID})" \
+            --body "Automated intake. Triage it in the weekly slot: set the disposition per ops/signal-log.md thresholds and route PATCH or AMEND changes in this PR."

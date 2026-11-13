@@ -1,0 +1,1189 @@
+{
+  "brain": {
+    "version": "1.0",
+    "last_updated": "2026-11-13"
+  },
+  "features": [
+    {
+      "id": "C01",
+      "name": "Market search and selection",
+      "area": "Discover (Dashboard)",
+      "status": "SHIPPED",
+      "aliases": [
+        "market picker",
+        "choose markets"
+      ],
+      "note": "City, ZIP, or metro group, up to 3 per dashboard."
+    },
+    {
+      "id": "C02",
+      "name": "Market ranking by Market Score",
+      "area": "Discover (Dashboard)",
+      "status": "PARTIAL",
+      "aliases": [
+        "top us markets",
+        "leaderboard",
+        "market score"
+      ],
+      "note": "Ranked list seen; score inputs unknown."
+    },
+    {
+      "id": "C03",
+      "name": "Seasonality analysis",
+      "area": "Discover (Dashboard)",
+      "status": "SHIPPED",
+      "aliases": [
+        "seasonality",
+        "fill speed curve"
+      ],
+      "note": "Occupancy and fill speed, with a national fallback label."
+    },
+    {
+      "id": "C04",
+      "name": "Market forecasts",
+      "area": "Discover (Dashboard)",
+      "status": "UNVERIFIED",
+      "aliases": [
+        "forecasts tab",
+        "market forecast"
+      ],
+      "note": ""
+    },
+    {
+      "id": "C05",
+      "name": "Submarket demand map",
+      "area": "Discover (Dashboard)",
+      "status": "SHIPPED",
+      "aliases": [
+        "hex cells",
+        "occupancy health",
+        "submarket signals"
+      ],
+      "note": "Evidence-adjusted cells, Strong, Watch, Weak, Thin."
+    },
+    {
+      "id": "C06",
+      "name": "Supply map with listing status",
+      "area": "Discover (Dashboard)",
+      "status": "SHIPPED",
+      "aliases": [
+        "explore map",
+        "listing status"
+      ],
+      "note": "Listed, Coming soon, Never listed, Delisted."
+    },
+    {
+      "id": "C07",
+      "name": "Flood-risk overlay",
+      "area": "Discover (Dashboard)",
+      "status": "UNVERIFIED",
+      "aliases": [
+        "fema",
+        "flood"
+      ],
+      "note": "Toggle seen, layer never rendered."
+    },
+    {
+      "id": "C08",
+      "name": "Market filters",
+      "area": "Discover (Dashboard)",
+      "status": "UNVERIFIED",
+      "aliases": [
+        "advanced filters",
+        "dormant properties"
+      ],
+      "note": ""
+    },
+    {
+      "id": "C09",
+      "name": "Saved views",
+      "area": "Discover (Dashboard)",
+      "status": "UNVERIFIED",
+      "aliases": [
+        "saved view"
+      ],
+      "note": ""
+    },
+    {
+      "id": "C10",
+      "name": "Market report export",
+      "area": "Discover (Dashboard)",
+      "status": "UNVERIFIED",
+      "aliases": [
+        "market report"
+      ],
+      "note": "Button looked disabled in the capture."
+    },
+    {
+      "id": "C11",
+      "name": "Property search",
+      "area": "Analyze (Property Analyzer)",
+      "status": "SHIPPED",
+      "aliases": [
+        "search by city",
+        "property id"
+      ],
+      "note": "Matches listing-title text as well as city."
+    },
+    {
+      "id": "C12",
+      "name": "Property performance and revenue",
+      "area": "Analyze (Property Analyzer)",
+      "status": "SHIPPED",
+      "aliases": [
+        "performance snapshot",
+        "estimated rental revenue"
+      ],
+      "note": ""
+    },
+    {
+      "id": "C13",
+      "name": "Property signal and recommendation",
+      "area": "Analyze (Property Analyzer)",
+      "status": "SHIPPED",
+      "aliases": [
+        "property signal",
+        "useful benchmark"
+      ],
+      "note": "One label seen; full label set unknown."
+    },
+    {
+      "id": "C14",
+      "name": "Room-segment economics",
+      "area": "Analyze (Property Analyzer)",
+      "status": "SHIPPED",
+      "aliases": [
+        "room segments",
+        "bathroom premium",
+        "best spread"
+      ],
+      "note": ""
+    },
+    {
+      "id": "C15",
+      "name": "Rolling performance windows",
+      "area": "Analyze (Property Analyzer)",
+      "status": "SHIPPED",
+      "aliases": [
+        "rolling windows",
+        "7d",
+        "30d",
+        "90d"
+      ],
+      "note": ""
+    },
+    {
+      "id": "C16",
+      "name": "Evidence quality scoring",
+      "area": "Analyze (Property Analyzer)",
+      "status": "PARTIAL",
+      "aliases": [
+        "evidence quality",
+        "completeness"
+      ],
+      "note": ""
+    },
+    {
+      "id": "C17",
+      "name": "Visual comps",
+      "area": "Analyze (Property Analyzer)",
+      "status": "SHIPPED",
+      "aliases": [
+        "visually similar rooms",
+        "similar rooms"
+      ],
+      "note": "Searches across markets, not only the local one."
+    },
+    {
+      "id": "C18",
+      "name": "AI upgrade concepts",
+      "area": "Analyze (Property Analyzer)",
+      "status": "SHIPPED",
+      "aliases": [
+        "media studio",
+        "ai concept"
+      ],
+      "note": "Five presets seen; output watermarked."
+    },
+    {
+      "id": "C19",
+      "name": "Property trends",
+      "area": "Analyze (Property Analyzer)",
+      "status": "UNVERIFIED",
+      "aliases": [
+        "trends tab"
+      ],
+      "note": ""
+    },
+    {
+      "id": "C20",
+      "name": "Room-level history",
+      "area": "Analyze (Property Analyzer)",
+      "status": "UNVERIFIED",
+      "aliases": [
+        "rooms tab",
+        "room history"
+      ],
+      "note": ""
+    },
+    {
+      "id": "C21",
+      "name": "Nearby supply check",
+      "area": "Underwrite (Property Predictor)",
+      "status": "SHIPPED",
+      "aliases": [
+        "nearby coliving supply"
+      ],
+      "note": "About 3 miles around any US address."
+    },
+    {
+      "id": "C22",
+      "name": "Bedroom layout recommendation",
+      "area": "Underwrite (Property Predictor)",
+      "status": "UNVERIFIED",
+      "aliases": [
+        "compare layouts",
+        "bedroom mix"
+      ],
+      "note": ""
+    },
+    {
+      "id": "C23",
+      "name": "Amenity ROI shortlist",
+      "area": "Underwrite (Property Predictor)",
+      "status": "UNVERIFIED",
+      "aliases": [
+        "amenity roi",
+        "recommend amenities"
+      ],
+      "note": ""
+    },
+    {
+      "id": "C24",
+      "name": "House rules checklist",
+      "area": "Underwrite (Property Predictor)",
+      "status": "UNVERIFIED",
+      "aliases": [
+        "house rules",
+        "recommend rules"
+      ],
+      "note": ""
+    },
+    {
+      "id": "C25",
+      "name": "Per-room rent guidance",
+      "area": "Underwrite (Property Predictor)",
+      "status": "UNVERIFIED",
+      "aliases": [
+        "rent guidance",
+        "price optimizer"
+      ],
+      "note": ""
+    },
+    {
+      "id": "C26",
+      "name": "Cohort lease-up outcomes",
+      "area": "Underwrite (Property Predictor)",
+      "status": "UNVERIFIED",
+      "aliases": [
+        "cohort outcomes",
+        "lease-up"
+      ],
+      "note": ""
+    },
+    {
+      "id": "C27",
+      "name": "Revenue forecast for any address",
+      "area": "Underwrite (Property Predictor)",
+      "status": "SHIPPED",
+      "aliases": [
+        "forecast",
+        "decision board",
+        "stabilized revenue"
+      ],
+      "note": "Formula, support, and confidence shown. See defect D-Q26."
+    },
+    {
+      "id": "C28",
+      "name": "Forecast stability test",
+      "area": "Underwrite (Property Predictor)",
+      "status": "SHIPPED",
+      "aliases": [
+        "evidence lookback"
+      ],
+      "note": ""
+    },
+    {
+      "id": "C29",
+      "name": "Comp set review",
+      "area": "Underwrite (Property Predictor)",
+      "status": "UNVERIFIED",
+      "aliases": [
+        "support details",
+        "caution flags"
+      ],
+      "note": ""
+    },
+    {
+      "id": "C30",
+      "name": "Garage conversion scenario",
+      "area": "Underwrite (Property Predictor)",
+      "status": "UNVERIFIED",
+      "aliases": [
+        "garage conversion"
+      ],
+      "note": ""
+    },
+    {
+      "id": "C31",
+      "name": "Deal calculator",
+      "area": "Decide and Monitor",
+      "status": "PARTIAL",
+      "aliases": [
+        "deal calculator",
+        "cash on cash",
+        "dscr",
+        "cap rate"
+      ],
+      "note": "Inputs seen, outputs never captured. Pro only."
+    },
+    {
+      "id": "C32",
+      "name": "Saved underwrites with re-run",
+      "area": "Decide and Monitor",
+      "status": "PARTIAL",
+      "aliases": [
+        "my underwrites",
+        "saved underwrites"
+      ],
+      "note": "Empty state only."
+    },
+    {
+      "id": "R01",
+      "name": "Upgrade economics per AI concept",
+      "area": "Roadmap, inferred and never claimable",
+      "status": "ROADMAP",
+      "aliases": [
+        "upgrade economics"
+      ],
+      "note": "From \"no validated economics for this edit yet\"."
+    },
+    {
+      "id": "R02",
+      "name": "Alerts on market moves",
+      "area": "Roadmap, inferred and never claimable",
+      "status": "ROADMAP",
+      "aliases": [
+        "market alerts",
+        "market-move alerts"
+      ],
+      "note": "Not seen anywhere; implied by the re-run copy."
+    },
+    {
+      "id": "R03",
+      "name": "Markets outside the US",
+      "area": "Roadmap, inferred and never claimable",
+      "status": "ROADMAP",
+      "aliases": [
+        "international markets",
+        "outside the us"
+      ],
+      "note": "Only hint is \"this country's\" in one helper line."
+    }
+  ],
+  "claims": [
+    {
+      "kind": "hard_ban",
+      "do_not_say": "Accuracy: \"accurate forecast\", \"precise\", \"predicts revenue\", \"within X%\", \"proven model\"",
+      "say_instead": "\"Every forecast shows its formula, its comps, and a confidence label.\" No backtest exists (G14).",
+      "phrases": [
+        "accurate forecast",
+        "precise",
+        "predicts revenue",
+        "within X%",
+        "proven model"
+      ]
+    },
+    {
+      "kind": "hard_ban",
+      "do_not_say": "Universal coverage: \"any market\", \"every property\", \"complete coverage\", \"all US markets\"",
+      "say_instead": "\"Underwrite any US address. Where nearby evidence is thin, RoomIQ labels the forecast fallback support and shows its confidence.\"",
+      "phrases": [
+        "any market",
+        "every property",
+        "complete coverage",
+        "all US markets"
+      ]
+    },
+    {
+      "kind": "hard_ban",
+      "do_not_say": "Coverage numbers: \"properties tracked\", \"rooms tracked\", \"thousands of listings\"",
+      "say_instead": "Nothing until G13 is answered. Screenshot counts (412 in DFW) are one capture, not a claim.",
+      "phrases": [
+        "properties tracked",
+        "rooms tracked",
+        "thousands of listings"
+      ]
+    },
+    {
+      "kind": "hard_ban",
+      "do_not_say": "Data source: \"PadSplit data\", \"scraped\", \"official data\", \"partnered with\", \"integrated with\"",
+      "say_instead": "\"Built from observed room listings in the markets RoomIQ covers.\" Never name or imply a source or partner (G11).",
+      "phrases": [
+        "PadSplit data",
+        "scraped",
+        "official data",
+        "partnered with",
+        "integrated with"
+      ]
+    },
+    {
+      "kind": "hard_ban",
+      "do_not_say": "Real time: \"real-time\", \"live data\"",
+      "say_instead": "\"Metrics show their as-of date.\"",
+      "phrases": [
+        "real-time",
+        "live data"
+      ]
+    },
+    {
+      "kind": "hard_ban",
+      "do_not_say": "Income language: \"income\", \"earnings\", \"collected rent\", \"cash flow guaranteed\"",
+      "say_instead": "\"Estimated rental revenue, based on observed rents and occupancy, not collected payments.\"",
+      "phrases": [
+        "income",
+        "earnings",
+        "collected rent",
+        "cash flow guaranteed"
+      ]
+    },
+    {
+      "kind": "hard_ban",
+      "do_not_say": "Financial advice: \"best deals\", \"guaranteed returns\", \"will cash flow\", \"bank-approved\", \"lender-ready\"",
+      "say_instead": "\"Model cash flow, cash-on-cash, DSCR, and cap rate from the forecast and your own inputs. For information, not financial advice.\"",
+      "phrases": [
+        "best deals",
+        "guaranteed returns",
+        "will cash flow",
+        "bank-approved",
+        "lender-ready"
+      ]
+    },
+    {
+      "kind": "hard_ban",
+      "do_not_say": "Legal status: \"legal in your city\", \"compliant\", \"zoning approved\", \"local law\"",
+      "say_instead": "\"Compare an operating checklist with recorded local policies. Not legal advice; confirm local rules.\"",
+      "phrases": [
+        "legal in your city",
+        "compliant",
+        "zoning approved",
+        "local law"
+      ]
+    },
+    {
+      "kind": "hard_ban",
+      "do_not_say": "AI everywhere: \"AI-powered\", \"AI predicts\", \"machine learning forecast\"",
+      "say_instead": "Name the capability. Only visual comps and AI concepts carry AI framing (G19).",
+      "phrases": [
+        "AI-powered",
+        "AI predicts",
+        "machine learning forecast"
+      ]
+    },
+    {
+      "kind": "hard_ban",
+      "do_not_say": "AI concepts as results: \"after photo\", \"your renovated room\", \"see the results\", \"boost rent by\"",
+      "say_instead": "\"Preview an AI concept of an upgrade, watermarked as AI-generated. No validated economics yet.\"",
+      "phrases": [
+        "after photo",
+        "your renovated room",
+        "see the results",
+        "boost rent by"
+      ]
+    },
+    {
+      "kind": "hard_ban",
+      "do_not_say": "Visual comps as value: \"worth the same\", \"value comps\", \"equally valuable\"",
+      "say_instead": "\"Rooms that look like this one, with their weekly price and days to fill.\"",
+      "phrases": [
+        "worth the same",
+        "value comps",
+        "equally valuable"
+      ]
+    },
+    {
+      "kind": "hard_ban",
+      "do_not_say": "Market Score internals: \"Market Score measures\", \"based on demand and supply\"",
+      "say_instead": "\"A 0 to 100 Market Score with a letter grade.\" (G18)",
+      "phrases": [
+        "Market Score measures",
+        "based on demand and supply"
+      ]
+    },
+    {
+      "kind": "hard_ban",
+      "do_not_say": "Prices and limits: \"pricing starts at\", \"plan costs\", \"free trial\", \"unlimited plan\", \"money-back\"",
+      "say_instead": "Nothing. Pricing is undecided (G07). `RoomIQ Pro` may be named as shown.",
+      "phrases": [
+        "pricing starts at",
+        "plan costs",
+        "free trial",
+        "unlimited plan",
+        "money-back"
+      ]
+    },
+    {
+      "kind": "hard_ban",
+      "do_not_say": "Invented proof: testimonials, customer counts, \"investors trust\", \"users earn\"",
+      "say_instead": "The closed proof set in `ops/copy-bank.md`. Customer proof today: none. Write `[PROOF POINT NEEDED]`.",
+      "phrases": [
+        "investors trust",
+        "users earn"
+      ]
+    },
+    {
+      "kind": "hard_ban",
+      "do_not_say": "Unverified features described: what amenity ROI, house rules, rent guidance, layouts, cohorts, or forecasts return",
+      "say_instead": "Name them as present in the product. Describe output only after status moves to SHIPPED.",
+      "phrases": []
+    },
+    {
+      "kind": "hard_ban",
+      "do_not_say": "Flood: \"flood risk score\", \"insurance determination\"",
+      "say_instead": "\"Check the FEMA flood hazard layer on the map. Not an insurance or regulatory determination.\"",
+      "phrases": [
+        "flood risk score",
+        "insurance determination"
+      ]
+    },
+    {
+      "kind": "hard_ban",
+      "do_not_say": "Category confusion: \"Airbnb\", \"short-term rental\", \"vacation rental\"",
+      "say_instead": "\"rent-by-the-room\", \"weekly room rents\".",
+      "phrases": [
+        "Airbnb",
+        "short-term rental",
+        "vacation rental"
+      ]
+    },
+    {
+      "kind": "fair_housing",
+      "do_not_say": "\"women only\", \"no kids\", \"Christian home\", \"no vouchers\"",
+      "say_instead": "rules about conduct and use of the property, applied to every resident.",
+      "phrases": [
+        "women only",
+        "no kids",
+        "Christian home",
+        "no vouchers"
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "group": "Brand and modules",
+      "term": "RoomIQ",
+      "rule": "One word, capital R, I, Q. Never \"Room IQ\", \"Roomiq\", or \"ROOMIQ\" in prose. The wordmark is spaced caps; prose is not."
+    },
+    {
+      "group": "Brand and modules",
+      "term": "RoomIQ Pro",
+      "rule": "The only plan name visible in the product. Name it only as shown. No other tier names."
+    },
+    {
+      "group": "Brand and modules",
+      "term": "Dashboard",
+      "rule": "Market-level view: market picker, Overview, Trends, Forecasts tabs, Explore map. Capitalized."
+    },
+    {
+      "group": "Brand and modules",
+      "term": "Property Analyzer",
+      "rule": "Property-level deep dive. \"the Analyzer\" on second mention. Never \"analyser\"."
+    },
+    {
+      "group": "Brand and modules",
+      "term": "Property Predictor",
+      "rule": "Underwriting flow for any US address. \"the Predictor\" on second mention."
+    },
+    {
+      "group": "Brand and modules",
+      "term": "Deal Calculator",
+      "rule": "Step 5 of the Predictor, marked Pro in the product."
+    },
+    {
+      "group": "Brand and modules",
+      "term": "My Underwrites",
+      "rule": "Saved property or market reports that can be re-run."
+    },
+    {
+      "group": "Brand and modules",
+      "term": "Media Studio",
+      "rule": "AI concept images of upgrades on listing photos."
+    },
+    {
+      "group": "Brand and modules",
+      "term": "Visually Similar Rooms",
+      "rule": "Image-similarity comps. Short form: \"visual comps\"."
+    },
+    {
+      "group": "Brand and modules",
+      "term": "Explore map",
+      "rule": "The Dashboard map with submarket cells and property dots."
+    },
+    {
+      "group": "Metrics and outputs",
+      "term": "Market Score",
+      "rule": "A 0 to 100 score with a letter grade. Never describe its inputs (confirm)."
+    },
+    {
+      "group": "Metrics and outputs",
+      "term": "Occupancy",
+      "rule": "Occupied rooms divided by total rooms. Room-level, never unit-level."
+    },
+    {
+      "group": "Metrics and outputs",
+      "term": "Avg weekly asking",
+      "rule": "Mean asking rent per room per week. Rents are weekly in this category."
+    },
+    {
+      "group": "Metrics and outputs",
+      "term": "Fill speed, days to fill",
+      "rule": "How fast a vacant room is re-leased (confirm formula)."
+    },
+    {
+      "group": "Metrics and outputs",
+      "term": "Occupancy Health",
+      "rule": "Submarket cell signal from observed occupied rooms."
+    },
+    {
+      "group": "Metrics and outputs",
+      "term": "Strong, Watch, Weak, Thin",
+      "rule": "Occupancy Score bands. \"Thin\" means too little evidence, never \"low demand\"."
+    },
+    {
+      "group": "Metrics and outputs",
+      "term": "Evidence Quality",
+      "rule": "Completeness, history coverage, and media count for one property."
+    },
+    {
+      "group": "Metrics and outputs",
+      "term": "Property Signal",
+      "rule": "The action label on a property (seen: `Useful benchmark`) plus its recommendation."
+    },
+    {
+      "group": "Metrics and outputs",
+      "term": "Best spread",
+      "rule": "Largest average weekly price gap between room segments."
+    },
+    {
+      "group": "Metrics and outputs",
+      "term": "Room segment",
+      "rule": "Rooms grouped by bathroom (Private, Shared) or size (Cozy, Standard)."
+    },
+    {
+      "group": "Metrics and outputs",
+      "term": "Rolling windows",
+      "rule": "7, 30, and 90-day views of occupancy, daily price, volatility, and deltas."
+    },
+    {
+      "group": "Metrics and outputs",
+      "term": "Estimated rental revenue",
+      "rule": "Observed asking rents times occupancy for a window. Never \"income\", \"earnings\", or \"collected\"."
+    },
+    {
+      "group": "Metrics and outputs",
+      "term": "Forecast",
+      "rule": "The Predictor's monthly revenue output. Use \"forecast\" for the output and \"baseline profile\" for the inputs. Never \"baseline\" for the output."
+    },
+    {
+      "group": "Metrics and outputs",
+      "term": "Fallback support",
+      "rule": "Local evidence was thin, so broader comps were used. Always shown with the confidence label."
+    },
+    {
+      "group": "Metrics and outputs",
+      "term": "Confidence",
+      "rule": "The forecast's label (seen: Low). Never translate into a percentage."
+    },
+    {
+      "group": "Metrics and outputs",
+      "term": "Illustrative scenarios",
+      "rule": "Plus and minus 10 percent of the forecast. Never \"range\", \"interval\", or \"bounds\"."
+    },
+    {
+      "group": "Metrics and outputs",
+      "term": "Model routing",
+      "rule": "Automatic choice between the tracked-history path and the bounded underwriting path."
+    },
+    {
+      "group": "Metrics and outputs",
+      "term": "Evidence lookback",
+      "rule": "The window of market evidence (default 270 days) behind priors and comps."
+    },
+    {
+      "group": "Metrics and outputs",
+      "term": "Underwrite",
+      "rule": "Noun: a saved report in My Underwrites. Verb: to run a property through the Predictor."
+    },
+    {
+      "group": "Metrics and outputs",
+      "term": "AI concept",
+      "rule": "A watermarked, AI-generated edit of a listing photo. Never \"render\", \"preview of results\", or \"after photo\"."
+    },
+    {
+      "group": "Category words",
+      "term": "rent-by-the-room",
+      "rule": "The category, hyphenated as an adjective. Investors search for this phrase."
+    },
+    {
+      "group": "Category words",
+      "term": "coliving",
+      "rule": "One word, lowercase, as in the product (\"Nearby coliving supply\"). Not \"co-living\" in RoomIQ copy."
+    },
+    {
+      "group": "Category words",
+      "term": "residents",
+      "rule": "The people who rent rooms. Not \"members\" (a marketplace's own term), not \"boarders\". Avoid \"tenants\": legal status varies by state."
+    },
+    {
+      "group": "Category words",
+      "term": "investors, operators",
+      "rule": "The two audiences. Never blend them in one asset. See `reference/icp-personas.md`."
+    },
+    {
+      "group": "Category words",
+      "term": "short-term rental, Airbnb",
+      "rule": "Banned as descriptions of RoomIQ or its category. RoomIQ models weekly room rents, not nightly stays."
+    },
+    {
+      "group": "Category words",
+      "term": "AI-powered",
+      "rule": "Banned as a blanket label. Name the capability: visual comps, AI concepts."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D-12",
+      "date": "2026-11-13",
+      "title": "Innovation accounting is the operating model",
+      "status": "DECIDED"
+    },
+    {
+      "id": "D-11",
+      "date": "2026-11-13",
+      "title": "Pricing and packaging",
+      "status": "OPEN"
+    },
+    {
+      "id": "D-10",
+      "date": "2026-11-13",
+      "title": "Channel mix",
+      "status": "WORKING"
+    },
+    {
+      "id": "D-09",
+      "date": "2026-11-13",
+      "title": "Lead message is visible evidence, not accuracy",
+      "status": "WORKING"
+    },
+    {
+      "id": "D-08",
+      "date": "2026-11-13",
+      "title": "Category framing",
+      "status": "WORKING"
+    },
+    {
+      "id": "D-07",
+      "date": "2026-11-13",
+      "title": "Audience order",
+      "status": "WORKING"
+    },
+    {
+      "id": "D-06",
+      "date": "2026-11-13",
+      "title": "Demo rule",
+      "status": "DECIDED"
+    },
+    {
+      "id": "D-05",
+      "date": "2026-11-13",
+      "title": "No accuracy claims until a backtest is published",
+      "status": "DECIDED"
+    },
+    {
+      "id": "D-04",
+      "date": "2026-11-13",
+      "title": "Data source never named or implied",
+      "status": "DECIDED"
+    },
+    {
+      "id": "D-03",
+      "date": "2026-11-13",
+      "title": "Evidence-graded status ledger",
+      "status": "DECIDED"
+    },
+    {
+      "id": "D-02",
+      "date": "2026-11-10",
+      "title": "Features are kept apart from UI and other elements",
+      "status": "DECIDED"
+    },
+    {
+      "id": "D-01",
+      "date": "2026-11-10",
+      "title": "Facts-only rule",
+      "status": "DECIDED"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "R1",
+      "assumption": "RoomIQ has the rights to display the listing data, photos, and host names it shows, and to make AI derivatives of the photos",
+      "type": "RISK",
+      "riskiness": 5,
+      "status": "UNTESTED",
+      "evidence": "None in sources; flagged high priority in S2",
+      "tested_by": "G11, G12"
+    },
+    {
+      "id": "R2",
+      "assumption": "Coverage in the Sun Belt preset metros is deep enough that most investor addresses there forecast better than Low confidence",
+      "type": "RISK",
+      "riskiness": 5,
+      "status": "UNTESTED",
+      "evidence": "DFW capture: 163 of 205 cells Thin",
+      "tested_by": "EXP-005"
+    },
+    {
+      "id": "A1",
+      "assumption": "Acquiring investors will run real, live deals through the Predictor instead of only their spreadsheet",
+      "type": "VALUE",
+      "riskiness": 5,
+      "status": "UNTESTED",
+      "evidence": "Product flow built for it; no user evidence",
+      "tested_by": "EXP-001"
+    },
+    {
+      "id": "R3",
+      "assumption": "Forecast error is small enough that investors and lenders act on it",
+      "type": "RISK",
+      "riskiness": 4,
+      "status": "UNTESTED",
+      "evidence": "No backtest",
+      "tested_by": "EXP-002"
+    },
+    {
+      "id": "A3",
+      "assumption": "Investors will pay for RoomIQ Pro to reach the Deal Calculator and saved underwrites",
+      "type": "VALUE",
+      "riskiness": 4,
+      "status": "UNTESTED",
+      "evidence": "Pro gate visible; pricing undecided",
+      "tested_by": "EXP-003"
+    },
+    {
+      "id": "A2",
+      "assumption": "Visible uncertainty (formula, support, confidence) increases trust more than it scares buyers off",
+      "type": "VALUE",
+      "riskiness": 4,
+      "status": "UNTESTED",
+      "evidence": "Product posture; no user evidence",
+      "tested_by": "EXP-001"
+    },
+    {
+      "id": "G1",
+      "assumption": "Education content on room-level underwriting reaches Audience A at low cost",
+      "type": "GROWTH",
+      "riskiness": 3,
+      "status": "UNTESTED",
+      "evidence": "None",
+      "tested_by": "EXP-004"
+    },
+    {
+      "id": "A4",
+      "assumption": "Operators change a room price after seeing segment premiums or visual comps",
+      "type": "VALUE",
+      "riskiness": 3,
+      "status": "UNTESTED",
+      "evidence": "None",
+      "tested_by": "EXP-006"
+    },
+    {
+      "id": "G2",
+      "assumption": "Investor communities convert to demos when the founder answers questions with worked examples",
+      "type": "GROWTH",
+      "riskiness": 3,
+      "status": "UNTESTED",
+      "evidence": "None",
+      "tested_by": "EXP-004"
+    },
+    {
+      "id": "A7",
+      "assumption": "Saved underwrites and re-runs bring investors back weekly",
+      "type": "VALUE",
+      "riskiness": 3,
+      "status": "UNTESTED",
+      "evidence": "My Underwrites empty state only",
+      "tested_by": "After C32 verified"
+    },
+    {
+      "id": "G3",
+      "assumption": "Activated investors refer a JV partner, lender, or community peer",
+      "type": "GROWTH",
+      "riskiness": 2,
+      "status": "UNTESTED",
+      "evidence": "None",
+      "tested_by": "Snapshot cohort review"
+    },
+    {
+      "id": "A5",
+      "assumption": "AI concepts help operators decide on upgrades, rather than being a novelty",
+      "type": "VALUE",
+      "riskiness": 2,
+      "status": "UNTESTED",
+      "evidence": "Feature SHIPPED; no economics",
+      "tested_by": "EXP-006 follow-up"
+    },
+    {
+      "id": "A6",
+      "assumption": "Market Score is used to choose markets, not only browsed",
+      "type": "VALUE",
+      "riskiness": 2,
+      "status": "UNTESTED",
+      "evidence": "None",
+      "tested_by": "Product analytics"
+    }
+  ],
+  "experiments": [
+    {
+      "id": "EXP-001",
+      "title": "Design-partner underwriting sessions",
+      "status": "PLANNED",
+      "tests": "A1, A2",
+      "audience": "A, acquiring investors in covered metros",
+      "method": "30-minute founder session per investor; they bring a live deal; the founder runs it through the Predictor with them.",
+      "metric": "share of sessions where the investor asks to run a second address or requests access, within 7 days",
+      "threshold_set_before_results": "at least 6 of 10 sessions",
+      "sample": "10 sessions",
+      "end": "2027-01-15",
+      "also_capture": "every objection and phrase verbatim into `ops/signal-log.md`; what else they looked at (competitive)",
+      "result": "none yet",
+      "decision": "PENDING"
+    },
+    {
+      "id": "EXP-002",
+      "title": "Forecast backtest",
+      "status": "PLANNED",
+      "tests": "R3",
+      "audience": "internal, then lenders if it passes",
+      "method": "hold out tracked properties with at least 180 days of history; forecast from earlier evidence; compare to observed.",
+      "metric": "median absolute percentage error by confidence label; share of outcomes inside the illustrative scenarios",
+      "threshold_set_before_results": "founder sets before running; record here first",
+      "sample": "all tracked properties in the seven preset metros meeting the history rule",
+      "end": "founder to set",
+      "result": "none yet",
+      "decision": "PENDING"
+    },
+    {
+      "id": "EXP-003",
+      "title": "Deal Calculator paywall interest",
+      "status": "PLANNED",
+      "tests": "A3",
+      "audience": "A",
+      "method": "in design-partner sessions, show the Pro gate at the Deal Calculator and ask a fixed willingness-to-pay question; no prices quoted until D-11 closes.",
+      "metric": "share who say they would pay for Pro to use the Deal Calculator on their next deal",
+      "threshold_set_before_results": "at least 4 of 10",
+      "sample": "the EXP-001 cohort",
+      "end": "2027-01-15",
+      "result": "none yet",
+      "decision": "PENDING"
+    },
+    {
+      "id": "EXP-004",
+      "title": "Education content in investor communities",
+      "status": "PLANNED",
+      "tests": "G1, G2",
+      "audience": "A",
+      "method": "publish 6 \"Underwrite the room\" pieces over 6 weeks; answer community questions with worked examples; one call to action per piece.",
+      "metric": "demos booked from content and community per week, by piece",
+      "threshold_set_before_results": "at least 2 qualified demos per week by week 6",
+      "sample": "6 pieces, 6 weeks",
+      "end": "6 weeks after the first piece ships",
+      "result": "none yet",
+      "decision": "PENDING"
+    },
+    {
+      "id": "EXP-005",
+      "title": "Coverage audit of preset metros",
+      "status": "PLANNED",
+      "tests": "R2",
+      "audience": "internal",
+      "method": "forecast 20 randomly chosen single-family addresses per preset metro; record support level and confidence.",
+      "metric": "share of addresses with better than Low confidence and no fallback support, per metro",
+      "threshold_set_before_results": "at least 60 percent in a metro to keep it in demos and targeting",
+      "sample": "140 addresses",
+      "end": "2026-12-15",
+      "result": "none yet",
+      "decision": "PENDING"
+    },
+    {
+      "id": "EXP-006",
+      "title": "Operator pricing change",
+      "status": "BLOCKED",
+      "tests": "A4, A5",
+      "audience": "B, operating hosts",
+      "method": "five operators review their own comparable property in the Analyzer; follow up after 14 days.",
+      "metric": "operators who changed a room price or planned an upgrade because of what they saw",
+      "threshold_set_before_results": "at least 2 of 5",
+      "sample": "5 operators",
+      "end": "set when unblocked",
+      "blocked_by": "D-07 puts operators second; starts after EXP-001",
+      "result": "none yet",
+      "decision": "PENDING"
+    }
+  ],
+  "signals": [
+    {
+      "date": "2026-11-13",
+      "type": "COMPETITIVE",
+      "source": "desk scan, DealCheck public site",
+      "verbatim": "\"buy & hold, rehab & hold, Airbnb, vacation and other types of rental properties\"",
+      "context": "Property types a leading deal calculator lists; coliving is not among them.",
+      "disposition": "PATCH",
+      "routed_to": "reference/competitor-battlecards.md"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "COMPETITIVE",
+      "source": "desk scan, marketplace host help pages",
+      "verbatim": "\"x% of metro area avg\"",
+      "context": "A marketplace's host Rooms tab shows each room's price against the metro average. Room-level benchmarking exists inside at least one platform, for its own hosts.",
+      "disposition": "AMEND",
+      "routed_to": "rules/do-not-say.md (scoping of \"the only room-level analytics tool\"), reference/competitive-analysis.md"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "SEGMENT",
+      "source": "product UI, screen 12",
+      "verbatim": "\"Property facts that investors actually underwrite: type, bedroom count, bathroom count, and gross size.\"",
+      "context": "The product's own copy addresses investors; the Predictor nudges toward \"investor-grade scenarios\".",
+      "disposition": "AMEND",
+      "routed_to": "ops/decisions.md D-07, reference/icp-personas.md"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "RISK",
+      "source": "product capture, screen 15",
+      "verbatim": "\"INTEREST RATE\" field reading 22% in the Deal Calculator capture; \"VACANCY 5%\" applied to revenue that already includes 89.5% occupancy",
+      "context": "Possible wrong default and possible double counting in a Pro financial output.",
+      "disposition": "AMEND",
+      "routed_to": "rules/feature-status.md (D-Q30, D-Q31), reference/demo-playbook.md"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "RISK",
+      "source": "product capture, screens 11 and 14",
+      "verbatim": "\"No active properties found within ~3 mi of this address.\" then \"Broader fallback evidence was used; median comp distance is 82.88 mi.\"",
+      "context": "An Upper East Side address forecast at $282 per room per week on distant comps. Labeled Low confidence, but a poor first run for a prospect.",
+      "disposition": "AMEND",
+      "routed_to": "rules/do-not-say.md (fallback clause), ops/decisions.md D-06, innovation/assumptions.md R2"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "RISK",
+      "source": "product capture, screen 14",
+      "verbatim": "\"Only 1 of 3 bedrooms have a room entry, so the forecast is based on the full bedroom count with typical rooms.\"",
+      "context": "The formula on the same screen uses 1.0 active rooms ($1,098). Copy and math disagree on the core output.",
+      "disposition": "AMEND",
+      "routed_to": "rules/feature-status.md (D-Q26), reference/demo-playbook.md"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "RISK",
+      "source": "product capture, screen 08",
+      "verbatim": "\"Rooms across the market that look like this one.\"",
+      "context": "Two of twelve matches were empty-closet photos at 95 percent match, and results spanned Texas and Florida.",
+      "disposition": "PATCH",
+      "routed_to": "reference/demo-playbook.md, rules/feature-status.md (D-Q18)"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "PROOF",
+      "source": "product capture, screens 09, 10, 14",
+      "verbatim": "\"AI-GENERATED - NOT ACTUAL PROPERTY CONDITION\" and \"Revenue assumptions, not a calibrated prediction interval.\"",
+      "context": "The product discloses its own limits on screen. Product-fact proof of the transparency posture, not customer proof.",
+      "disposition": "PATCH",
+      "routed_to": "ops/copy-bank.md (product facts)"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "STATUS",
+      "source": "product capture, batches 01 to 03",
+      "verbatim": "\"Features and capabilities (32)\" with evidence \"14 seen, 4 partly seen, 14 button only\"",
+      "context": "The full capability inventory from 15 screens.",
+      "disposition": "AMEND",
+      "routed_to": "rules/feature-status.md, ops/decisions.md D-03"
+    }
+  ],
+  "activities": [
+    {
+      "date": "2026-11-13",
+      "type": "BRAIN",
+      "title": "Phase 9 live test: design-partner invitation",
+      "id": "ACT-0005",
+      "what": "Produced the Campaign 1 warm invitation using only the brain, then ran lint and the QA checklist",
+      "audience": "A",
+      "linked": "EXP-001, A1",
+      "expected": "Asset passes lint and QA with no fact missing from the brain",
+      "outcome": "Passed: 0 lint errors, QA ticked, 114-word body after one cut. Missing from the brain: the founder's sign-off name and a booking link (founder inputs; product URL already open in ops/asset-index.md). Asset saved as examples/outreach-warm-design-partner.md.",
+      "signals_logged": "none"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "BRAIN",
+      "title": "GTM Brain v1.0 built",
+      "id": "ACT-0004",
+      "what": "Built the RoomIQ GTM Brain from the discovery pack with the go-to-market-brain skill: control layer, reference layer, innovation accounting, adapters for AI tools, CLI, and MCP server.",
+      "audience": "internal",
+      "linked": "D-12",
+      "expected": "every later activity and signal lands in a ledger; founder answers the gap interview",
+      "outcome": "pending",
+      "signals_logged": "none"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "RESEARCH",
+      "title": "Founder gap interview prepared",
+      "id": "ACT-0003",
+      "what": "Batched 21 questions the sources could not answer, each with the working default the brain runs on.",
+      "audience": "internal",
+      "linked": "G01 to G21, R1, R2, R3, A3",
+      "expected": "answers convert WORKING decisions to DECIDED and promote UNVERIFIED capabilities",
+      "outcome": "pending",
+      "signals_logged": "none"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "RESEARCH",
+      "title": "Competitive desk scan",
+      "id": "ACT-0002",
+      "what": "Scanned public pages of platform host tools, STR analytics, whole-unit rent comps, deal calculators, and data vendors.",
+      "audience": "internal",
+      "linked": "reference/competitive-analysis.md",
+      "expected": "a candidate rival set and scoped superlatives",
+      "outcome": "no direct room-level investor analytics rival found; one platform's host tools benchmark rooms for its own hosts; \"the only\" claim scoped",
+      "signals_logged": "2"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "RESEARCH",
+      "title": "Product discovery capture, batches 01 to 03",
+      "id": "ACT-0001",
+      "what": "Captured and analyzed 15 screens across the Dashboard, Property Analyzer, and Property Predictor.",
+      "audience": "internal",
+      "linked": "D-01, D-02, D-03",
+      "expected": "a facts-only capability inventory",
+      "outcome": "32 features (14 seen, 4 partly seen, 14 button only), 36 QA issues, 26 open questions",
+      "signals_logged": "7"
+    }
+  ]
+}

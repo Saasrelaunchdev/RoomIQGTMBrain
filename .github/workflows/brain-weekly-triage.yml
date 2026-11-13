@@ -1,0 +1,37 @@
+# Opens the weekly triage issue every Monday with the innovation accounting rollup, so the
+# compounding loop runs on a clock instead of on memory.
+name: brain-weekly-triage
+
+on:
+  schedule:
+    - cron: "17 13 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build the rollup
+        run: |
+          python3 tools/brain.py metrics > triage.md
+          {
+            echo ""
+            echo "## This week"
+            echo "- [ ] Disposition every UNTRIAGED signal (ops/signal-log.md)"
+            echo "- [ ] Fill outcomes for last week's activities (ops/activity-log.md)"
+            echo "- [ ] Update experiment statuses (innovation/experiments.md)"
+            echo "- [ ] Expire WATCH items with no increment in two cycles"
+            echo "- [ ] Open PRs for PATCHes; list AMENDs for founder approval"
+          } >> triage.md
+      - name: Open the issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue create --title "Weekly triage $(date -u +%F)" --body-file triage.md

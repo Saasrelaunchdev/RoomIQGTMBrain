@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Saasrelaunchdev/RoomIQGTMBrain/schemas/activity.schema.json",
+  "title": "Activity",
+  "description": "Something the team did that could teach the brain. Appended to ops/activity-log.md.",
+  "type": "object",
+  "required": [
+    "date",
+    "type",
+    "title",
+    "what",
+    "expected"
+  ],
+  "properties": {
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "DEMO",
+        "CALL",
+        "CONTENT",
+        "COMMUNITY",
+        "RELEASE",
+        "EXPERIMENT",
+        "OUTREACH",
+        "PARTNERSHIP",
+        "PRICING",
+        "COVERAGE",
+        "RESEARCH",
+        "BRAIN"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^ACT-\\d{4}$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "what": {
+      "type": "string"
+    },
+    "audience": {
+      "type": "string",
+      "description": "A, B, or internal."
+    },
+    "linked": {
+      "type": "string",
+      "description": "Experiment and assumption IDs, for example EXP-001, A1."
+    },
+    "expected": {
+      "type": "string",
+      "description": "What this should move, written before the outcome exists."
+    },
+    "outcome": {
+      "type": "string"
+    },
+    "signals_logged": {
+      "type": "string"
+    }
+  }
+}

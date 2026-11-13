@@ -1,0 +1,823 @@
+{
+  "name": "roomiq-gtm-brain",
+  "version": "1.0",
+  "last_updated": "2026-11-13",
+  "control_layer": [
+    "AGENTS.md",
+    "rules/writing-rules.md",
+    "rules/do-not-say.md",
+    "rules/feature-status.md",
+    "rules/glossary.md",
+    "ops/QA-checklist.md"
+  ],
+  "load_policy": {
+    "landing_page": [
+      "reference/positioning.md",
+      "reference/value-proposition-investors.md",
+      "reference/value-proposition-operators.md",
+      "reference/objection-handling.md",
+      "templates/landing-page.md",
+      "examples/landing-hero-investors.md",
+      "ops/copy-bank.md"
+    ],
+    "one_pager": [
+      "reference/positioning.md",
+      "reference/metrics-methodology.md",
+      "templates/one-pager.md",
+      "examples/one-pager-investors.md",
+      "ops/copy-bank.md"
+    ],
+    "demo": [
+      "reference/demo-playbook.md",
+      "reference/product-surface.md",
+      "templates/demo-script.md",
+      "examples/demo-talk-track.md"
+    ],
+    "content": [
+      "reference/content-engine.md",
+      "reference/customer-journey.md",
+      "templates/seo-article.md",
+      "templates/social-post.md",
+      "ops/copy-bank.md"
+    ],
+    "community": [
+      "reference/content-engine.md",
+      "templates/community-answer.md",
+      "examples/community-answer-operators.md"
+    ],
+    "outreach": [
+      "reference/marketing-campaigns.md",
+      "templates/outreach-warm.md",
+      "reference/icp-personas.md"
+    ],
+    "competitive": [
+      "reference/competitive-analysis.md",
+      "reference/competitor-battlecards.md",
+      "reference/objection-handling.md"
+    ],
+    "objection": [
+      "reference/objection-handling.md",
+      "reference/trust-and-risk.md"
+    ],
+    "product_copy": [
+      "templates/in-app-copy.md",
+      "examples/in-app-copy-fixes.md",
+      "reference/metrics-methodology.md",
+      "reference/product-surface.md"
+    ],
+    "release_note": [
+      "templates/release-note.md",
+      "reference/product-surface.md"
+    ],
+    "support": [
+      "reference/metrics-methodology.md",
+      "reference/product-surface.md",
+      "reference/objection-handling.md"
+    ],
+    "strategy": [
+      "context/RoomIQ_GTM_Master_Context.md",
+      "ops/decisions.md",
+      "reference/positioning.md",
+      "reference/icp-personas.md",
+      "reference/feature-matrix.md"
+    ],
+    "pricing": [
+      "reference/pricing-packaging.md",
+      "ops/decisions.md"
+    ],
+    "signal_intake": [
+      "ops/signal-log.md",
+      "ops/decisions.md",
+      "innovation/assumptions.md",
+      "reference/innovation-accounting.md"
+    ],
+    "experiment": [
+      "reference/innovation-accounting.md",
+      "innovation/assumptions.md",
+      "innovation/experiments.md",
+      "innovation/metrics.md"
+    ],
+    "snapshot": [
+      "innovation/metrics.md",
+      "innovation/assumptions.md",
+      "ops/decisions.md"
+    ]
+  },
+  "files": [
+    {
+      "path": "CLAUDE.md",
+      "layer": "router",
+      "always_load": false,
+      "purpose": "router for Claude Code and Claude apps; wins if routers disagree.",
+      "lines": 46,
+      "bytes": 3164,
+      "tokens_est": 791,
+      "last_reviewed": null,
+      "sha256_12": "dcc010ed1262"
+    },
+    {
+      "path": "AGENTS.md",
+      "layer": "router",
+      "always_load": true,
+      "purpose": "router for Codex, Cursor, Zed, Jules, opencode, Warp, and other AGENTS.md readers.",
+      "lines": 58,
+      "bytes": 3462,
+      "tokens_est": 865,
+      "last_reviewed": null,
+      "sha256_12": "3f21a8a13b1e"
+    },
+    {
+      "path": "GEMINI.md",
+      "layer": "router",
+      "always_load": false,
+      "purpose": "pointer for Gemini CLI.",
+      "lines": 38,
+      "bytes": 2187,
+      "tokens_est": 546,
+      "last_reviewed": null,
+      "sha256_12": "9057f2508c2c"
+    },
+    {
+      "path": "README.md",
+      "layer": "router",
+      "always_load": false,
+      "purpose": "human orientation, architecture, use cases, diagrams.",
+      "lines": 889,
+      "bytes": 46337,
+      "tokens_est": 11584,
+      "last_reviewed": null,
+      "sha256_12": "0476a1d9bacd"
+    },
+    {
+      "path": "llms.txt",
+      "layer": "router",
+      "always_load": false,
+      "purpose": "",
+      "lines": 89,
+      "bytes": 7557,
+      "tokens_est": 1889,
+      "last_reviewed": null,
+      "sha256_12": "fbfc67f575a1"
+    },
+    {
+      "path": "context/RoomIQ_GTM_Master_Context.md",
+      "layer": "reference",
+      "always_load": false,
+      "purpose": "the whole go-to-market in one read; Section 0 is written to the agent.",
+      "lines": 315,
+      "bytes": 24314,
+      "tokens_est": 6078,
+      "last_reviewed": "2026-11-13",
+      "sha256_12": "7b472515d326"
+    },
+    {
+      "path": "rules/do-not-say.md",
+      "layer": "control",
+      "always_load": true,
+      "purpose": "forbidden claims with safe replacements, fair housing, demo rules, scoped superlatives.",
+      "lines": 46,
+      "bytes": 5339,
+      "tokens_est": 1334,
+      "last_reviewed": "2026-11-13",
+      "sha256_12": "4a60e8ce3763"
+    },
+    {
+      "path": "rules/feature-status.md",
+      "layer": "control",
+      "always_load": true,
+      "purpose": "SHIPPED, PARTIAL, UNVERIFIED, IN BUILD, ROADMAP for C01 to C32 and R01 to R03; known defects.",
+      "lines": 67,
+      "bytes": 4931,
+      "tokens_est": 1232,
+      "last_reviewed": "2026-11-13",
+      "sha256_12": "0c8ff8fac665"
+    },
+    {
+      "path": "rules/glossary.md",
+      "layer": "control",
+      "always_load": true,
+      "purpose": "canonical product, metric, and category vocabulary.",
+      "lines": 59,
+      "bytes": 4375,
+      "tokens_est": 1093,
+      "last_reviewed": "2026-11-13",
+      "sha256_12": "dfcd4f869258"
+    },
+    {
+      "path": "rules/writing-rules.md",
+      "layer": "control",
+      "always_load": true,
+      "purpose": "mechanics, banned words, tone, channel discipline, signature lines.",
+      "lines": 47,
+      "bytes": 3534,
+      "tokens_est": 883,
+      "last_reviewed": "2026-11-13",
+      "sha256_12": "a209a4d0d555"
+    },
+    {
+      "path": "reference/competitive-analysis.md",
+      "layer": "reference",
+      "always_load": false,
+      "purpose": "market shape, vectors, wedge, dated public facts.",
+      "lines": 45,
+      "bytes": 3869,
+      "tokens_est": 967,
+      "last_reviewed": null,
+      "sha256_12": "7f117c70b5fd"
+    },
+    {
+      "path": "reference/competitor-battlecards.md",
+      "layer": "reference",
+      "always_load": false,
+      "purpose": "strength, gap, how RoomIQ wins, per rival.",
+      "lines": 43,
+      "bytes": 3239,
+      "tokens_est": 809,
+      "last_reviewed": null,
+      "sha256_12": "a7ad2dd2219e"
+    },
+    {
+      "path": "reference/content-engine.md",
+      "layer": "reference",
+      "always_load": false,
+      "purpose": "channel engine for education content and communities.",
+      "lines": 40,
+      "bytes": 2730,
+      "tokens_est": 682,
+      "last_reviewed": null,
+      "sha256_12": "947cebc90246"
+    },
+    {
+      "path": "reference/customer-journey.md",
+      "layer": "reference",
+      "always_load": false,
+      "purpose": "two funnels, stage by stage, activation definition.",
+      "lines": 40,
+      "bytes": 3225,
+      "tokens_est": 806,
+      "last_reviewed": null,
+      "sha256_12": "8a601a9352e3"
+    },
+    {
+      "path": "reference/demo-playbook.md",
+      "layer": "reference",
+      "always_load": false,
+      "purpose": "channel engine for founder-led demos, landmines, screenshot rules.",
+      "lines": 34,
+      "bytes": 2800,
+      "tokens_est": 700,
+      "last_reviewed": null,
+      "sha256_12": "71c5fb3c7695"
+    },
+    {
+      "path": "reference/feature-matrix.md",
+      "layer": "reference",
+      "always_load": false,
+      "purpose": "which capability leads, hooks, is table stakes, or is held.",
+      "lines": 49,
+      "bytes": 4448,
+      "tokens_est": 1112,
+      "last_reviewed": null,
+      "sha256_12": "2e032328bfa6"
+    },
+    {
+      "path": "reference/icp-personas.md",
+      "layer": "reference",
+      "always_load": false,
+      "purpose": "acquiring investors, operating hosts, buying committee, design partners.",
+      "lines": 61,
+      "bytes": 3616,
+      "tokens_est": 904,
+      "last_reviewed": null,
+      "sha256_12": "cbd88f1ec204"
+    },
+    {
+      "path": "reference/innovation-accounting.md",
+      "layer": "reference",
+      "always_load": false,
+      "purpose": "baseline, tune, pivot or persevere; the snowball data flow.",
+      "lines": 50,
+      "bytes": 3604,
+      "tokens_est": 901,
+      "last_reviewed": null,
+      "sha256_12": "d08811219f5d"
+    },
+    {
+      "path": "reference/marketing-campaigns.md",
+      "layer": "reference",
+      "always_load": false,
+      "purpose": "five campaigns, the assumption each tests, asset backlog.",
+      "lines": 51,
+      "bytes": 3299,
+      "tokens_est": 824,
+      "last_reviewed": null,
+      "sha256_12": "f8fd476f2c12"
+    },
+    {
+      "path": "reference/metrics-methodology.md",
+      "layer": "reference",
+      "always_load": false,
+      "purpose": "how each number is built, verified versus working.",
+      "lines": 33,
+      "bytes": 2939,
+      "tokens_est": 734,
+      "last_reviewed": null,
+      "sha256_12": "7c42c2fd76f5"
+    },
+    {
+      "path": "reference/objection-handling.md",
+      "layer": "reference",
+      "always_load": false,
+      "purpose": "data source, accuracy, coverage, AI images, pricing, legal.",
+      "lines": 38,
+      "bytes": 3127,
+      "tokens_est": 781,
+      "last_reviewed": null,
+      "sha256_12": "e5c8aab921bc"
+    },
+    {
+      "path": "reference/positioning.md",
+      "layer": "reference",
+      "always_load": false,
+      "purpose": "category, statement, reframes, one-liners.",
+      "lines": 37,
+      "bytes": 2457,
+      "tokens_est": 614,
+      "last_reviewed": null,
+      "sha256_12": "4be312236fb9"
+    },
+    {
+      "path": "reference/pricing-packaging.md",
+      "layer": "reference",
+      "always_load": false,
+      "purpose": "monetization signals as hypotheses; pricing is OPEN.",
+      "lines": 29,
+      "bytes": 1941,
+      "tokens_est": 485,
+      "last_reviewed": null,
+      "sha256_12": "0e0f6de2ce04"
+    },
+    {
+      "path": "reference/product-surface.md",
+      "layer": "reference",
+      "always_load": false,
+      "purpose": "RoomIQ as built, IA, workflow, entities, reconciling numbers.",
+      "lines": 63,
+      "bytes": 4094,
+      "tokens_est": 1023,
+      "last_reviewed": null,
+      "sha256_12": "570023b50c7f"
+    },
+    {
+      "path": "reference/trust-and-risk.md",
+      "layer": "reference",
+      "always_load": false,
+      "purpose": "data rights, AI derivatives, financial outputs, fair housing, disclosures.",
+      "lines": 35,
+      "bytes": 3155,
+      "tokens_est": 788,
+      "last_reviewed": null,
+      "sha256_12": "d4a89d9d4bd5"
+    },
+    {
+      "path": "reference/value-proposition-investors.md",
+      "layer": "reference",
+      "always_load": false,
+      "purpose": "Audience A pillars and reasons to believe.",
+      "lines": 46,
+      "bytes": 3276,
+      "tokens_est": 819,
+      "last_reviewed": null,
+      "sha256_12": "270861761dc6"
+    },
+    {
+      "path": "reference/value-proposition-operators.md",
+      "layer": "reference",
+      "always_load": false,
+      "purpose": "Audience B pillars and reasons to believe.",
+      "lines": 45,
+      "bytes": 2860,
+      "tokens_est": 715,
+      "last_reviewed": null,
+      "sha256_12": "522f4f392f9f"
+    },
+    {
+      "path": "innovation/assumptions.md",
+      "layer": "state",
+      "always_load": false,
+      "purpose": "leap-of-faith assumptions with riskiness and status.",
+      "lines": 29,
+      "bytes": 3188,
+      "tokens_est": 797,
+      "last_reviewed": "2026-11-13",
+      "sha256_12": "c28a91950ad4"
+    },
+    {
+      "path": "innovation/experiments.md",
+      "layer": "state",
+      "always_load": false,
+      "purpose": "pre-registered experiments with thresholds set before results.",
+      "lines": 82,
+      "bytes": 3931,
+      "tokens_est": 982,
+      "last_reviewed": "2026-11-13",
+      "sha256_12": "8a1be4c22b1d"
+    },
+    {
+      "path": "innovation/metrics.md",
+      "layer": "state",
+      "always_load": false,
+      "purpose": "North Star, input metrics, vanity guards, learning velocity.",
+      "lines": 42,
+      "bytes": 3317,
+      "tokens_est": 829,
+      "last_reviewed": "2026-11-13",
+      "sha256_12": "0f8f7d084686"
+    },
+    {
+      "path": "ops/QA-checklist.md",
+      "layer": "control",
+      "always_load": true,
+      "purpose": "the pre-ship gate.",
+      "lines": 52,
+      "bytes": 3042,
+      "tokens_est": 760,
+      "last_reviewed": null,
+      "sha256_12": "c16ccd1407f4"
+    },
+    {
+      "path": "ops/activity-log.md",
+      "layer": "state",
+      "always_load": false,
+      "purpose": "what the team did, expected outcome written first.",
+      "lines": 68,
+      "bytes": 3337,
+      "tokens_est": 834,
+      "last_reviewed": null,
+      "sha256_12": "6e768b3a1882"
+    },
+    {
+      "path": "ops/asset-index.md",
+      "layer": "state",
+      "always_load": false,
+      "purpose": "sources, live surfaces, adapters, generated artifacts.",
+      "lines": 54,
+      "bytes": 3425,
+      "tokens_est": 856,
+      "last_reviewed": null,
+      "sha256_12": "7e8ef96ad310"
+    },
+    {
+      "path": "ops/copy-bank.md",
+      "layer": "state",
+      "always_load": false,
+      "purpose": "checked language and the closed proof set.",
+      "lines": 56,
+      "bytes": 3115,
+      "tokens_est": 778,
+      "last_reviewed": null,
+      "sha256_12": "465c2ec0f270"
+    },
+    {
+      "path": "ops/decisions.md",
+      "layer": "state",
+      "always_load": false,
+      "purpose": "DECIDED, WORKING, OPEN, with rationale and what each does not change.",
+      "lines": 98,
+      "bytes": 6948,
+      "tokens_est": 1737,
+      "last_reviewed": null,
+      "sha256_12": "b0ecf28cfaf8"
+    },
+    {
+      "path": "ops/founder-gap-interview.md",
+      "layer": "state",
+      "always_load": false,
+      "purpose": "21 questions with the defaults the brain runs on.",
+      "lines": 50,
+      "bytes": 6091,
+      "tokens_est": 1522,
+      "last_reviewed": null,
+      "sha256_12": "9dac807b2abf"
+    },
+    {
+      "path": "ops/review-cadence.md",
+      "layer": "state",
+      "always_load": false,
+      "purpose": "rituals, owners, staleness, authority.",
+      "lines": 39,
+      "bytes": 2676,
+      "tokens_est": 669,
+      "last_reviewed": null,
+      "sha256_12": "b1fe18a39576"
+    },
+    {
+      "path": "ops/signal-log.md",
+      "layer": "state",
+      "always_load": false,
+      "purpose": "raw market input, verbatim, with disposition.",
+      "lines": 89,
+      "bytes": 5100,
+      "tokens_est": 1275,
+      "last_reviewed": null,
+      "sha256_12": "68d0b6960201"
+    },
+    {
+      "path": "snapshots/2026-11-13-baseline.md",
+      "layer": "state",
+      "always_load": false,
+      "purpose": "day-zero capture.",
+      "lines": 56,
+      "bytes": 2862,
+      "tokens_est": 715,
+      "last_reviewed": null,
+      "sha256_12": "aface765bbf4"
+    },
+    {
+      "path": "templates/README.md",
+      "layer": "execution",
+      "always_load": false,
+      "purpose": "one per channel in the working mix, none for excluded channels.",
+      "lines": 17,
+      "bytes": 1506,
+      "tokens_est": 376,
+      "last_reviewed": null,
+      "sha256_12": "5f81dd2153ed"
+    },
+    {
+      "path": "templates/community-answer.md",
+      "layer": "execution",
+      "always_load": false,
+      "purpose": "",
+      "lines": 19,
+      "bytes": 962,
+      "tokens_est": 240,
+      "last_reviewed": null,
+      "sha256_12": "94b224825b3f"
+    },
+    {
+      "path": "templates/demo-script.md",
+      "layer": "execution",
+      "always_load": false,
+      "purpose": "",
+      "lines": 27,
+      "bytes": 1605,
+      "tokens_est": 401,
+      "last_reviewed": null,
+      "sha256_12": "ac125bb1ef69"
+    },
+    {
+      "path": "templates/in-app-copy.md",
+      "layer": "execution",
+      "always_load": false,
+      "purpose": "",
+      "lines": 31,
+      "bytes": 1618,
+      "tokens_est": 404,
+      "last_reviewed": null,
+      "sha256_12": "55d0bee55821"
+    },
+    {
+      "path": "templates/landing-page.md",
+      "layer": "execution",
+      "always_load": false,
+      "purpose": "",
+      "lines": 23,
+      "bytes": 1801,
+      "tokens_est": 450,
+      "last_reviewed": null,
+      "sha256_12": "ecfd21939646"
+    },
+    {
+      "path": "templates/one-pager.md",
+      "layer": "execution",
+      "always_load": false,
+      "purpose": "",
+      "lines": 16,
+      "bytes": 994,
+      "tokens_est": 248,
+      "last_reviewed": null,
+      "sha256_12": "1de00d41e0f1"
+    },
+    {
+      "path": "templates/outreach-warm.md",
+      "layer": "execution",
+      "always_load": false,
+      "purpose": "",
+      "lines": 17,
+      "bytes": 1041,
+      "tokens_est": 260,
+      "last_reviewed": null,
+      "sha256_12": "b4da0de9c284"
+    },
+    {
+      "path": "templates/release-note.md",
+      "layer": "execution",
+      "always_load": false,
+      "purpose": "",
+      "lines": 21,
+      "bytes": 1073,
+      "tokens_est": 268,
+      "last_reviewed": null,
+      "sha256_12": "3d447866f71e"
+    },
+    {
+      "path": "templates/seo-article.md",
+      "layer": "execution",
+      "always_load": false,
+      "purpose": "",
+      "lines": 22,
+      "bytes": 1165,
+      "tokens_est": 291,
+      "last_reviewed": null,
+      "sha256_12": "e2bbc9e97ec5"
+    },
+    {
+      "path": "templates/social-post.md",
+      "layer": "execution",
+      "always_load": false,
+      "purpose": "",
+      "lines": 18,
+      "bytes": 843,
+      "tokens_est": 210,
+      "last_reviewed": null,
+      "sha256_12": "f02c418db061"
+    },
+    {
+      "path": "examples/community-answer-operators.md",
+      "layer": "execution",
+      "always_load": false,
+      "purpose": "",
+      "lines": 27,
+      "bytes": 1968,
+      "tokens_est": 492,
+      "last_reviewed": null,
+      "sha256_12": "d14878531ba6"
+    },
+    {
+      "path": "examples/demo-talk-track.md",
+      "layer": "execution",
+      "always_load": false,
+      "purpose": "",
+      "lines": 43,
+      "bytes": 2399,
+      "tokens_est": 599,
+      "last_reviewed": null,
+      "sha256_12": "15815b10889b"
+    },
+    {
+      "path": "examples/in-app-copy-fixes.md",
+      "layer": "execution",
+      "always_load": false,
+      "purpose": "",
+      "lines": 25,
+      "bytes": 2267,
+      "tokens_est": 566,
+      "last_reviewed": null,
+      "sha256_12": "eedf4d3c9e00"
+    },
+    {
+      "path": "examples/landing-hero-investors.md",
+      "layer": "execution",
+      "always_load": false,
+      "purpose": "",
+      "lines": 40,
+      "bytes": 2603,
+      "tokens_est": 650,
+      "last_reviewed": null,
+      "sha256_12": "0dc3dc65a4a7"
+    },
+    {
+      "path": "examples/one-pager-investors.md",
+      "layer": "execution",
+      "always_load": false,
+      "purpose": "",
+      "lines": 38,
+      "bytes": 2175,
+      "tokens_est": 543,
+      "last_reviewed": null,
+      "sha256_12": "31ee7300a408"
+    },
+    {
+      "path": "examples/outreach-warm-design-partner.md",
+      "layer": "execution",
+      "always_load": false,
+      "purpose": "the Phase 9 live test asset, with its QA record.",
+      "lines": 38,
+      "bytes": 2287,
+      "tokens_est": 571,
+      "last_reviewed": null,
+      "sha256_12": "ae6927723238"
+    },
+    {
+      "path": "prompts/common-tasks.md",
+      "layer": "execution",
+      "always_load": false,
+      "purpose": "filled prompts per recurring job; also MCP prompts and Claude Code commands.",
+      "lines": 50,
+      "bytes": 4903,
+      "tokens_est": 1225,
+      "last_reviewed": null,
+      "sha256_12": "0b3429e7516b"
+    },
+    {
+      "path": "pages/README.md",
+      "layer": "execution",
+      "always_load": false,
+      "purpose": "shipped long-form assets; none yet.",
+      "lines": 10,
+      "bytes": 653,
+      "tokens_est": 163,
+      "last_reviewed": null,
+      "sha256_12": "14bc61ff9220"
+    },
+    {
+      "path": "adapters/README.md",
+      "layer": "adapter",
+      "always_load": false,
+      "purpose": "every tool, how it loads, the conformance check.",
+      "lines": 87,
+      "bytes": 6750,
+      "tokens_est": 1687,
+      "last_reviewed": null,
+      "sha256_12": "ef75fdaabc54"
+    },
+    {
+      "path": "adapters/portable-control-layer.md",
+      "layer": "adapter",
+      "always_load": false,
+      "purpose": "dated paste-in for chat models without file access.",
+      "lines": 43,
+      "bytes": 5653,
+      "tokens_est": 1413,
+      "last_reviewed": null,
+      "sha256_12": "077b2be538f6"
+    },
+    {
+      "path": "sources/README.md",
+      "layer": "source",
+      "always_load": false,
+      "purpose": "what each source settles; why screenshots are kept out.",
+      "lines": 38,
+      "bytes": 3553,
+      "tokens_est": 888,
+      "last_reviewed": null,
+      "sha256_12": "f10620075edb"
+    },
+    {
+      "path": "sources/extracted/discovery/README.md",
+      "layer": "source",
+      "always_load": false,
+      "purpose": "",
+      "lines": 21,
+      "bytes": 1903,
+      "tokens_est": 471,
+      "last_reviewed": null,
+      "sha256_12": "db89e0988141"
+    },
+    {
+      "path": "sources/extracted/discovery/coverage-gaps.md",
+      "layer": "source",
+      "always_load": false,
+      "purpose": "",
+      "lines": 106,
+      "bytes": 8063,
+      "tokens_est": 2007,
+      "last_reviewed": null,
+      "sha256_12": "9978b5bd4de7"
+    },
+    {
+      "path": "sources/extracted/discovery/feature-classification.md",
+      "layer": "source",
+      "always_load": false,
+      "purpose": "",
+      "lines": 63,
+      "bytes": 6287,
+      "tokens_est": 1561,
+      "last_reviewed": null,
+      "sha256_12": "44c73c2be89e"
+    },
+    {
+      "path": "sources/extracted/discovery/screen-inventory.md",
+      "layer": "source",
+      "always_load": false,
+      "purpose": "",
+      "lines": 641,
+      "bytes": 39944,
+      "tokens_est": 9900,
+      "last_reviewed": null,
+      "sha256_12": "9f1f215cdfc2"
+    },
+    {
+      "path": "sources/extracted/discovery/working-notes.md",
+      "layer": "source",
+      "always_load": false,
+      "purpose": "",
+      "lines": 405,
+      "bytes": 37214,
+      "tokens_est": 9138,
+      "last_reviewed": null,
+      "sha256_12": "1c7e531d4d8b"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Saasrelaunchdev/RoomIQGTMBrain/schemas/experiment.schema.json",
+  "title": "Experiment",
+  "description": "A pre-registered test of one assumption. innovation/experiments.md.",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "status",
+    "tests",
+    "metric",
+    "threshold_set_before_results",
+    "decision"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^EXP-\\d{3}$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PLANNED",
+        "RUNNING",
+        "DONE",
+        "BLOCKED"
+      ]
+    },
+    "tests": {
+      "type": "string",
+      "pattern": "[ARG]\\d+"
+    },
+    "audience": {
+      "type": "string"
+    },
+    "method": {
+      "type": "string"
+    },
+    "metric": {
+      "type": "string"
+    },
+    "threshold_set_before_results": {
+      "type": "string"
+    },
+    "sample": {
+      "type": "string"
+    },
+    "end": {
+      "type": "string"
+    },
+    "result": {
+      "type": "string"
+    },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "PERSEVERE",
+        "PIVOT",
+        "ITERATE",
+        "KILL",
+        "PENDING"
+      ]
+    }
+  }
+}

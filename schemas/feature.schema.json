@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Saasrelaunchdev/RoomIQGTMBrain/schemas/feature.schema.json",
+  "title": "Feature status",
+  "description": "One capability line of rules/feature-status.md.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[CR]\\d{2}$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "area": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "SHIPPED",
+        "PARTIAL",
+        "UNVERIFIED",
+        "IN BUILD",
+        "ROADMAP"
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "note": {
+      "type": "string"
+    }
+  }
+}

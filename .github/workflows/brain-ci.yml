@@ -1,0 +1,31 @@
+# Audits the brain on every push and pull request. Fails when a rule is broken, a generated
+# file or adapter is stale, or a ledger stops parsing.
+name: brain-ci
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Unit tests (parsers, linter, MCP handshake)
+        run: python3 -m unittest discover -s tools/tests -v
+      - name: Brain audit (skill audit plus structural checks)
+        run: python3 tools/brain.py audit --quiet
+      - name: Generated files are current
+        run: python3 tools/brain.py build --check
+      - name: Tool adapters match their template
+        run: python3 tools/brain.py adapters --check
+      - name: Lint the gold-standard examples
+        run: python3 tools/brain.py lint examples/*.md
+      - name: Innovation accounting summary
+        run: python3 tools/brain.py metrics >> "$GITHUB_STEP_SUMMARY"
